@@ -1,0 +1,7 @@
+Quantidade de compras: 1
+Total final: R$50.00
+Total bruto: R$50.00
+Total dos descontos: R$0.00
+Valor Original: R$50.00
+Descontos aplicados: R$0.00
+Valor final da compra: R$50.00
