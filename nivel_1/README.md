@@ -20,7 +20,7 @@ Ao final, o sistema apresenta a quantidade de compras, o total bruto, o total de
 
 ## Como executar
 
-1. Abra a pasta `[=nivel_1` no Visual Studio Code ou em um terminal.
+1. Abra a pasta `nivel_1` no Visual Studio Code ou em um terminal.
 2. Execute o seguinte comando:
 python pdv.py
 
@@ -54,10 +54,12 @@ python pdv.py
 
 ## Estrutura do projeto
 
+```
 nivel_1/
 ├── pdv.py
 ├── README.md
 └── resumo.txt
+```
 
 ## Funcionalidades extras (bônus)
 
