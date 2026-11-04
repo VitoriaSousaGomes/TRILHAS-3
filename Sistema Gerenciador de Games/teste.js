@@ -1,7 +1,0 @@
-console.log("Iniciando meu projeto") 
-console.log("---------------------------")
-console.log("---------------------------")
-console.log("---------------------------")
-console.log("---------------------------")
-console.log("---------------------------")
-console.log("Projeto inicializado")
