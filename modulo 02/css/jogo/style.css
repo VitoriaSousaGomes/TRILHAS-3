@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: monospace;
+    background-color: #000000;
+    color: #08CB00;
+}
+
+h1, h2, a {
+    font-family: "Press Start 2P", monospace;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    border: 2px solid #08CB00;
+    margin: 20px auto;
+    width: 700px;
+    padding: 20px;
+    background-color: #253900;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    object-fit: contain;
+}
+
+.img-container {
+    margin: auto;
+    width: fit-content;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    border: 2px solid #4f5547;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+}
+
+li:hover {
+    border: 2px solid #08CB00;
+    transform: translateY(-5px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-voltar {
+    border: 2px solid #08CB00;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.link-voltar:hover {
+    background-color: #08CB00;
+    color: black;
+    border: none;
+}
