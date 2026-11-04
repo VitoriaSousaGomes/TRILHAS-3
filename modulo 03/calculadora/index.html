@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link  rel="shortcut icon" href="assets/icon.svg">
+
+    <style>
+
+        body {
+            background: #161f25;
+        }
+
+        .calculadora {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1C2931;
+            width: 330px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .visor {
+            display: flex;
+            height: 50px;
+            background-color: #BED6C4;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 3em;
+            justify-content: end;
+        }
+
+        .teclas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        button {
+            height: 52px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .alto {
+            grid-row: span 2;
+            height: auto;
+        }
+
+        .largo {
+            grid-column: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="visor">0</div>
+    
+        <div class="teclas">
+            <button>C</button>
+            <button class="op">/</button>
+            <button class="op">*</button>
+            <button class="op">-</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="alto op">+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="alto">=</button>
+            <button class="largo">0</button>
+            <button>.</button>
+        </div>
+    </div>
+
+    <script src="script-js"></script>
+</body>
+</html>

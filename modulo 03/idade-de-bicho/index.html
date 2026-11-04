@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade de bicho</title>
+    <link rel="shortcut icon" href="assets/icon.svg">
+    <link rel="apple-touch-icon" href="assets/icon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="tema" onclick="trocarTema()">🌙 Escuro</button>
+    <div class="caixa">
+        <h1>🐾 Qual a sua idade de bicho</h1>
+        <p>Quantos anos você tem?</p>
+        <input type="number" id="idade">
+
+        <p>Escolha um animal:</p>
+        <div class="botoes">
+            <button onclick="calculaIdade('cachorro', 7, '🐕')">🐕 Cachorro</button>
+            <button onclick="calculaIdade('gato', 6, '🐈')">🐈 Gato</button>
+            <button onclick="calculaIdade('coelho', 8, '🐇')">🐇 Coelho</button>
+            <button onclick="calculaIdade('hamster', 30, '🐹')">🐹 hamster</button>
+            <button onclick="calculaIdade('cavalo', 3, '🐎')">🐎 Cavalo</button>
+            <button onclick="calculaIdade('tartaruga', 0.5, '🐢')">🐢 Tartaruga</button>
+        </div>
+
+        <p id="resultado"></p>
+        <ul id="historico"></ul>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

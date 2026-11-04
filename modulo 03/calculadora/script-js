@@ -1,0 +1,66 @@
+let visor = document.querySelector('.visor');
+let teclas = document.querySelectorAll('.teclas button');
+let operadores = document.querySelectorAll('.op');
+
+let operadorSelecionado = null;
+let primeiroNumero = null;
+
+teclas.forEach(function(tecla) {
+    tecla.addEventListener("click", function() {
+        let valor = tecla.textContent;
+
+        if (tecla.textContent === "C") {
+                visor.textContent = "0";
+                primeiroNumero = null;
+                operadorSelecionado = null;
+            } else if (tecla.textContent === "=") {
+                if(operadorSelecionado == null) {
+
+                } else {let segundoNumero = Number(visor.textContent);
+
+                    if (operadorSelecionado === "+"){
+                        visor.textContent = primeiroNumero + segundoNumero;     
+                    } else if (operadorSelecionado === "-") {
+                        visor.textContent = primeiroNumero - segundoNumero;
+                        } else if (operadorSelecionado === "*") {
+                            visor.textContent = primeiroNumero * segundoNumero;
+                        } else if (operadorSelecionado === "/") {
+                            if (segundoNumero === 0) {
+                                visor.textContent = "erro";
+                            }else {visor.textContent = primeiroNumero / segundoNumero;}
+                        } operadorSelecionado = null;
+                }
+                }
+
+                else if (tecla.classList.contains("op")) {
+                        if (operadorSelecionado != null) {
+
+                        } else {
+                            operadorSelecionado = tecla.textContent;
+                                primeiroNumero = Number(visor.textContent);
+                                visor.textContent = "0";
+                            }
+
+                    } else if (tecla.textContent === ".") {
+
+                        if (!visor.textContent.includes(".")) {
+
+                            if (visor.textContent === "0") {
+                                visor.textContent = "0.";
+                            } else {
+                                visor.textContent = visor.textContent + tecla.textContent;
+                            }
+
+                        }
+
+                    } else if (visor.textContent === "0") {
+                        visor.textContent = tecla.textContent;
+
+                    } else {
+                        visor.textContent = visor.textContent + tecla.textContent;
+                    }
+    });           
+});
+
+
+

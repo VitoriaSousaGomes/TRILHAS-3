@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #DCE0E4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            row-gap: none;
+        }
+
+        .calculadora{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #1B282F;
+            padding: 10px 16px;
+            border-radius: 20px;
+            width: fit-content;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        #calc {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input, select, button, #resultado {
+            border-radius: 10px;
+            border: none;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            height: 38px;
+            box-sizing: border-box;
+        }
+
+        input {
+            width: 65px;
+            text-align: center;
+        }
+
+        select {
+            width: 45px;
+            padding-left: 6px;
+            cursor: pointer;
+        }
+        
+        button {
+            width: 40px;
+            background: #2DC4B8;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #EEAB4A;
+        }
+
+        #resultado {
+            background-color: #CBE4D1;
+            color: #1B282F;
+            min-width: 75px;
+            font-size: 18px;
+            padding: 0 12px;
+            display: inline-flex;
+            justify-content: right;
+            align-items: center;
+            border-radius: 10px;
+        }
+        
+        #erro {
+            color: red;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+
+        </style>
+
+</head>
+<body>
+    <div class="calculadora">
+        <form id="calc">
+            <input type="number" id="n1">
+            <select id="op">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="number" id="n2">
+            <button type="submit">=</button>
+            <output id="resultado"></output>
+        </form>
+
+        <p id="erro"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
